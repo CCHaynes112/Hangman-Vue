@@ -1,9 +1,7 @@
 <template>
-    <div class="LetterTile">
-        <a onClick={getLetterMethod}>
-            <p>{{ letter.toUpperCase() }}</p>
-        </a>
-    </div>
+    <a class="LetterTile" v-on:click="onClickTile(letter)">
+        <p>{{ letter.toUpperCase() }}</p>
+    </a>
 </template>
 
 <script>
@@ -11,7 +9,12 @@ export default {
     name: 'LetterTile',
     props: {
         letter: String
-    }
+    },
+    methods: {
+        onClickTile (letter) {
+            this.$emit('clicked', letter)
+        }
+  }
 }
 </script>
 

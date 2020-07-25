@@ -23,6 +23,7 @@ export default {
 
 <style scoped>
     .HangmanCharacter {
+        background-color: white;
         text-align: center;
         width: 100%;
         letter-spacing: 5px;
