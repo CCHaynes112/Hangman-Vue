@@ -1,4 +1,3 @@
-# hangman-vue
 # Hangman-vue
 
 Vue based Hangman game
